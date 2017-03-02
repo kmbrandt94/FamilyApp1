@@ -13,43 +13,52 @@ namespace Family
         public FamilyPage()
         {
             Title = "My Family";
+
             Content = new StackLayout
             {
-                VerticalOptions = LayoutOptions.Center,
+                
+                Orientation = StackOrientation.Vertical,
+                VerticalOptions = LayoutOptions.FillAndExpand,
                 BackgroundColor = Color.FromHex("#000000"),
                 Children = {
                     new Label {
+                        Text = "Kyle (Me) studies .NET Programming at Hennepin Technical College. Kyle loves his small family.",     
                         HorizontalTextAlignment = TextAlignment.Center,
-                        Text = "Kyle (Me)",
+                        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                         FontAttributes = FontAttributes.Bold,
-                        TextColor = Color.FromHex("#FFFFFF")
+                        TextColor = Color.FromHex("#FF0000")
                     },
                     new Label {
+                        Text = "Ashley (Girlfriend) works at HealthPartners. Ashley also loves her small family.",
                         HorizontalTextAlignment = TextAlignment.Center,
-                        Text = "Ashley (Girlfriend)",
+                        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                         FontAttributes = FontAttributes.Bold,
-                        TextColor = Color.FromHex("#FFFFFF")
+                        TextColor = Color.FromHex("#CD00FF")
 
                     },
                     new Label {
+                        Text = "Joey (Dog) is a young Yorkshire Terrier. Joey spends his time cuddling with Ashley.",
                         HorizontalTextAlignment = TextAlignment.Center,
-                        Text = "Joey (Dog)",
+                        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                         FontAttributes = FontAttributes.Bold,
-                        TextColor = Color.FromHex("#FFFFFF")
+                        TextColor = Color.FromHex("#001BFF")
 
                 },
                     new Label {
+                        Text = "Oscar (Cat) is a young Norwegian Forest Cat. He spends his time eating and annoying his father Kyle.",
                         HorizontalTextAlignment = TextAlignment.Center,
-                        Text = "Oscar (Cat)",
+                        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                         FontAttributes = FontAttributes.Bold,
-                        TextColor = Color.FromHex("#FFFFFF")
+                        TextColor = Color.FromHex("#FBFF00")
 
                 },
                     new Label {
+                        Text = "Knight (Rabbit) is the newest addition to the family. He is a newborn French Angora Kit.",
                         HorizontalTextAlignment = TextAlignment.Center,
-                        Text = "Knight (Rabbit)",
+                        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                         FontAttributes = FontAttributes.Bold,
-                        TextColor = Color.FromHex("#FFFFFF")
+                        TextColor = Color.FromHex("#0FFF00")
+  
 
                 }
              }
