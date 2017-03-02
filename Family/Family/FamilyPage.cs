@@ -14,7 +14,7 @@ namespace Family
         {
             Title = "My Family";
 
-            Content = new StackLayout
+            StackLayout stackLayout = new StackLayout
             {
                 
                 Orientation = StackOrientation.Vertical,
@@ -22,7 +22,7 @@ namespace Family
                 BackgroundColor = Color.FromHex("#000000"),
                 Children = {
                     new Label {
-                        Text = "Kyle (Me) studies .NET Programming at Hennepin Technical College. Kyle loves his small family.",     
+                        Text = "Kyle (Me) studies .NET Programming at Hennepin Technical College. Kyle loves his small family. He also enjoys video games and music. Some of his favorite music genre's include Dubstep, Riddim, And all types of Metal. His favorite game genre's are MMORPGS, RPGS, Adventure, and Horror Games. asdfdasfasdfasdfasdfasdfasdfasfasdfasdfasdfasdfasfasdfasdfasdfasdfasdf",
                         HorizontalTextAlignment = TextAlignment.Center,
                         FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                         FontAttributes = FontAttributes.Bold,
@@ -59,10 +59,14 @@ namespace Family
                         FontAttributes = FontAttributes.Bold,
                         TextColor = Color.FromHex("#0FFF00")
   
-
+        
                 }
              }
           };
+            Content = new ScrollView
+            {
+                Content = stackLayout            };
+
        }
    }
 }
